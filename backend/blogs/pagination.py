@@ -6,7 +6,7 @@ from math import ceil
 
 
 class CustomPageNumberPagination(pagination.PageNumberPagination):
-    page_size = 10
+    page_size = 2
 
     def generate_response(self, query_set, serializer, request: Request, total=None) -> Response:
         try:
